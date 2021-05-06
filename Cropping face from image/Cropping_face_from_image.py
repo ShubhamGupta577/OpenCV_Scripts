@@ -9,7 +9,7 @@ img=cv2.resize(img,(600,600))
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # Load the cascade
-face_cascade = cv2.CascadeClassifier('/content/haarcascade_frontalface_alt2.xml')
+face_cascade = cv2.CascadeClassifier('./haarcascade_frontalface_alt2.xml')
 
 # Detecting the faces
 faces = face_cascade.detectMultiScale(gray, 1.1, 4)
